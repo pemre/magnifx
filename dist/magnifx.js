@@ -24,7 +24,7 @@
         }
         anchor = anchor.parentElement
       }
-      this.alter = el.getAttribute('data-magnifx')
+      this.alter = el.getAttribute('data-magnifx-src')
         || (anchor && anchor.getAttribute('href'))
         || opts.src
         || ''
