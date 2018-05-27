@@ -1,18 +1,20 @@
 {
   "name": "magnify",
-  "version": "2.0.0",
-  "description": "A simple, lightweight magnifying glass zoom library.",
+  "version": "1.0.0",
+  "description": "A simple, lightweight JS magnifying glass zoom library.",
   "keywords": [
     "magnify",
-    "zoom"
+    "zoom",
+    "JS plugin"
   ],
-  "homepage": "http://thdoan.github.io/magnify/",
+  "homepage": "https://github.com/pemre/magnify",
   "bugs": {
-    "url": "https://github.com/thdoan/magnify/issues"
+    "url": "https://github.com/pemre/magnify/issues"
   },
   "license": "MIT",
-  "author": "Tom Doan <thdoan@gmail.com> (http://www.tohodo.com/)",
+  "author": "Emre Piskin <piskin.emre@gmail.com> (https://rencs.com)",
   "contributors": [
+    "Tom Doan <thdoan@gmail.com> (http://www.tohodo.com)",
     "Bogdan Chadkin <trysound@yandex.ru>"
   ],
   "main": "dist/magnify.js",
@@ -22,6 +24,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thdoan/magnify.git"
+    "url": "https://github.com/pemre/magnify.git"
   }
 }
