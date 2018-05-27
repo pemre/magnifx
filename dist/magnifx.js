@@ -58,7 +58,8 @@
     },
 
     zoom: function () {
-      var inst = this,
+      var body = document.body,
+        inst = this,
         container = inst.container,
         lens = inst.lens,
         img = inst.image,
@@ -71,10 +72,14 @@
           mImg.src = inst.alter
         }
         lens.style.opacity = 1
+        lens.style.display = 'inherit'
+        body.classList.add('magnifying')
       })
 
       container.addEventListener('mouseleave', function () {
         lens.style.opacity = 0
+        lens.style.display = 'none'
+        body.classList.remove('magnifying')
       })
 
       // Graceful degradation
