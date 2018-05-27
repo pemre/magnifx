@@ -1,15 +1,15 @@
-.magnify {
+.magnifx {
   position: relative;
   display: inline-block;
   cursor: none;
 }
 
-.magnify img {
+.magnifx img {
   position: relative;
   display: block;
 }
 
-.magnify-lens {
+.magnifx-lens {
   position: absolute;
   z-index: 100;
   width: 200px;
@@ -23,13 +23,13 @@
   transition: opacity;
 }
 
-.magnify-loading,
-.magnify-error {
+.magnifx-loading,
+.magnifx-error {
   background: rgba(51, 51, 51, .75) !important;
 }
 
-.magnify-loading:before,
-.magnify-error:before {
+.magnifx-loading:before,
+.magnifx-error:before {
   position: absolute;
   top: 45%;
   left: 0;
@@ -41,12 +41,12 @@
   text-transform: none;
 }
 
-.magnify-loading:before {
+.magnifx-loading:before {
   content: 'Loading...';
   color: #fff;
 }
 
-.magnify-error:before {
+.magnifx-error:before {
   content: 'Error!';
   color: #f66;
 }

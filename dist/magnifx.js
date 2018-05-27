@@ -1,7 +1,7 @@
-/*!
- * Magnify 2.0.0
- * by Tom Doan and Bogdan Chadkin
- * http://thdoan.github.io/magnify
+/**
+ * Magnifx 1.0.0
+ *
+ * @author Emre Piskin <piskin.emre@gmail.com>
  *
  * Licensed under the MIT License.
  */
@@ -9,7 +9,7 @@
 (function(window, document, Math) {
   var initialized = [];
 
-  function Magnify(el, opts) {
+  function Magnifx(el, opts) {
     var anchor;
     if(!~initialized.indexOf(el)) {
       initialized.push(el);
@@ -24,7 +24,7 @@
         }
         anchor = anchor.parentElement;
       }
-      this.alter = el.getAttribute('data-magnify')
+      this.alter = el.getAttribute('data-magnifx')
                 || (anchor && anchor.getAttribute('href'))
                 || opts.src
                 || '';
@@ -34,17 +34,17 @@
     }
   }
 
-  Magnify.prototype = {
+  Magnifx.prototype = {
     wrap: function () {
       var inst = this,
           image = inst.image,
           container, lens;
 
       container = document.createElement('div');
-      container.className = 'magnify';
+      container.className = 'magnifx';
 
       lens = document.createElement('div');
-      lens.className = 'magnify-lens magnify-loading';
+      lens.className = 'magnifx-lens magnifx-loading';
       lens.style.transitionDuration = inst.opts.speed + 'ms';
       lens.style.webkitTransitionDuration = inst.opts.speed + 'ms';
 
@@ -117,18 +117,18 @@
 
       mImg.addEventListener('load', function () {
         loaded = true;
-        lens.className = 'magnify-lens';
+        lens.className = 'magnifx-lens';
         lens.style.background = 'url(' + inst.alter + ') no-repeat';
       });
 
       mImg.addEventListener('error', function () {
         errored = true;
-        lens.className = 'magnify-lens magnify-error';
+        lens.className = 'magnifx-lens magnifx-error';
       });
     }
   };
 
-  window.magnify = function (el, opts) {
+  window.magnifx = function (el, opts) {
     var i;
 
     // Detect element
@@ -151,7 +151,7 @@
     if(el.length) {
       for(i = el.length - 1; i != -1; i -= 1) {
         if(el[i].nodeType) {
-          new Magnify(el[i], opts)
+          new Magnifx(el[i], opts)
         }
       }
     }
@@ -159,8 +159,8 @@
 
   // jQuery wrapper
   if(window.jQuery) {
-    window.jQuery.fn.magnify = function (opts) {
-      window.magnify(this, opts)
+    window.jQuery.fn.magnifx = function (opts) {
+      window.magnifx(this, opts)
     };
   }
 
