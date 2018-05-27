@@ -2,8 +2,8 @@
  * Magnifx 1.0.0
  *
  * @author Emre Piskin <piskin.emre@gmail.com>
- *
- * Licensed under the MIT License.
+ * @licence MIT
+ * @description A simple, lightweight JS magnifying glass zoom library forked from https://github.com/TrySound/magnify/tree/fix-vanillajs
  */
 
 (function (window, document, Math) {
