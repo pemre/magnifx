@@ -47,6 +47,7 @@
       lens.className = 'magnifx-lens magnifx-loading'
       lens.style.transitionDuration = inst.opts.speed + 'ms'
       lens.style.webkitTransitionDuration = inst.opts.speed + 'ms'
+      lens.style.display = 'none'
 
       // Append
       container.appendChild(lens)
