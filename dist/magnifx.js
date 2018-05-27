@@ -157,11 +157,4 @@
     }
   };
 
-  // jQuery wrapper
-  if(window.jQuery) {
-    window.jQuery.fn.magnifx = function (opts) {
-      window.magnifx(this, opts)
-    };
-  }
-
 }(window, document, Math));
