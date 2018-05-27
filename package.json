@@ -1,15 +1,16 @@
 {
-  "name": "magnify",
+  "name": "magnifx",
   "version": "1.0.0",
   "description": "A simple, lightweight JS magnifying glass zoom library.",
   "keywords": [
+    "magnifx",
     "magnify",
     "zoom",
     "JS plugin"
   ],
-  "homepage": "https://github.com/pemre/magnify",
+  "homepage": "https://github.com/pemre/magnifx",
   "bugs": {
-    "url": "https://github.com/pemre/magnify/issues"
+    "url": "https://github.com/pemre/magnifx/issues"
   },
   "license": "MIT",
   "author": "Emre Piskin <piskin.emre@gmail.com> (https://rencs.com)",
@@ -17,13 +18,13 @@
     "Tom Doan <thdoan@gmail.com> (http://www.tohodo.com)",
     "Bogdan Chadkin <trysound@yandex.ru>"
   ],
-  "main": "dist/magnify.js",
+  "main": "dist/magnifx.js",
   "files": [
-    "dist/magnify.js",
-    "dist/magnify.css"
+    "dist/magnifx.js",
+    "dist/magnifx.css"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pemre/magnify.git"
+    "url": "https://github.com/pemre/magnifx.git"
   }
 }
